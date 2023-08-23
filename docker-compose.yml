@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  meu-servidor-de-arquivos:
+    image: httpd:latest
+    container_name: arquivos-build
+    ports:
+      - "8080:80"
+    volumes:
+      - ./arquivos_build:/usr/local/apache2/htdocs/
+      - ./arquivos_build/.htpasswd:/usr/local/apache2/.htpasswd
+    environment:
+      - AUTH_USERFILE=/usr/local/apache2/.htpasswd
+      - AUTH_TYPE=Basic
+    restart: always
+    

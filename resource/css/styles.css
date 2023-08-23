@@ -1,0 +1,154 @@
+table {
+  width: 100%;
+  font-family: Arial, sans-serif;
+  border: 2px solid #83f9fe6b;
+  border-collapse: collapse;
+  border-radius: 8px;
+}
+
+th {
+  background-color: #20ceffd1;
+  color: #333;
+}
+
+td {
+  padding: 10px;
+  text-align: left;
+  background-color:#12d8ff7a;
+}
+
+a, h2 {
+  padding-left: 10px;
+  text-decoration: none;
+  color: #a8d2ff;
+}
+
+a:hover , h2:hover {
+  color: #feffff;
+}
+
+body {
+  font-family: 'Open Sans', Frutiger, Calibri, 'Myriad Pro', Myriad, sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  border-radius: 8px;
+  background-image: url('../image/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.diretorio {
+  padding: 10px;
+}
+
+.logo-icon {
+  width: 40px;
+  height: 50px;
+  background-image: url(../image/prodatinha.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #a8d2ff;
+  border: 2px solid #4ff6fe;
+  border-radius: 100%;
+}
+
+#cabecalho {
+  font-family: 'Open Sans', Frutiger, Calibri, 'Myriad Pro', Myriad, sans-serif;
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  align-content: flex-start;
+  flex-direction: row;
+  padding-left: 10px;
+  background-color: #204d7eab;
+  box-shadow: 0px 2px 4px rgb(1 32 96 / 66%);
+}
+
+#conteudo {
+  flex: 1;
+  width: 100%;
+  height: 50%;
+  margin-top: 2vh;
+  margin-left: 2vh;
+  transition: 0.3s;
+  align-items: flex-start;
+}
+
+#arquivos {
+  width: 50%;
+  transition: 0.3s;
+  box-shadow: 3px 3px 3px rgb(31 207 255 / 55%);
+}
+
+#rodape {
+  padding: 0px;
+  text-align: center;
+  align-items: flex-end;
+  background-color: #204d7ee8;
+  box-shadow: 6px 6px 6px 9px rgb(1 32 96 / 66%);
+}
+
+@media screen and (min-width: 667px) and (max-width: 1024px) {
+  
+  /* Estilos para tablets e telas pequenas */
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    border: 2px solid #83f9fe6b;
+    border-radius: 8px;
+  }
+  
+  body {
+    font-family: 'Open Sans', Frutiger, Calibri, 'Myriad Pro', Myriad, sans-serif;
+    display: inline-flex;
+    flex-direction: column;
+    align-content: flex-start;
+    min-width: 100%;
+    background-image: url('../image/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .logo-icon {
+    width: 40px;
+    height: 50px;
+    background-image: url(../image/prodatinha.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #a8d2ff;
+    border: 2px solid #4ff6fe;
+    border-radius: 100%;
+  }
+
+  #cabecalho {
+    font-family: 'Open Sans', Frutiger, Calibri, 'Myriad Pro', Myriad, sans-serif;
+    padding-left: 1vh;
+    width: 99%;
+    background-color: #204d7e;
+  }
+
+  #arquivos {
+    width: 100%;
+    transition: 0.3s;
+  }
+
+  #conteudo {
+    flex: 1;
+    width: 30%;
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  #rodape {
+    padding: 0px;
+    text-align: center;
+    align-items: flex-end;
+    background-color: #204d7ee8;
+    box-shadow: 6px 6px 6px 9px rgb(1 32 96 / 66%);
+  }
+}
